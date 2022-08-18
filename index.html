@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sidenav.css">
+    <link rel="stylesheet" href="fab.css">
+</head>
+
+<body class="left-nav">
+    <nav class="side-nav">
+        <ul class="side-nav__menu">
+            <li>
+                <a href="#">
+                    <i class="bi bi-clipboard-data"></i>
+                    <div class="menu-text">Dashboard</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-wallet2"></i>
+                    <div class="menu-text">Income</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-bag"></i>
+                    <div class="menu-text">Expenses</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="mode-selector" data-mode="light">
+                    <i class="bi bi-cloud-moon"></i>
+                    <div class="menu-text">Dark</div>
+                </a>
+            </li>
+        </ul>
+
+        <div class=fab-wrapper>
+            <div class="fab">
+                <i class="bi bi-plus-lg" style="font-size: 1.4rem; font-weight:bold"></i>
+            </div>
+            <div class="fab-items">
+                <div class="fab-item">
+                    <i class="bi bi-bag-plus"></i>
+                </div>
+                <div class="fab-item">
+                    <i class="bi bi-wallet"></i>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container">
+        <div class="stats-wrapper">
+            <div class="summary-stats-wrapper">
+                <div class="stats-outer-wrapper">
+
+                    <div class="stats-title">
+                        <div>Income</div>
+                        <div class="stats-title__amount">
+                            <div>£300</div>
+                            <div class="muted">this week</div>    
+                        </div>
+                    </div>
+                    <div class="summary-stats income-stats">
+                        <div class="bar-container">
+                            <div class="bar">
+                                <div class="bar-value" style="height: 20%;"></div>
+                            </div>
+                            <div class="stats-day">Mon</div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar">
+                                <div class="bar-value" style="height: 40%;"></div>
+                            </div>
+                            <div class="stats-day">Tue</div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar">
+                                <div class="bar-value" style="height: 30%;"></div>
+                            </div>
+                            <div class="stats-day">Wed</div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar">
+                                <div class="bar-value" style="height: 50%;"></div>
+                            </div>
+                            <div class="stats-day">Thu</div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar">
+                                <div class="bar-value" style="height: 30%;"></div>
+                            </div>
+                            <div class="stats-day">Fri</div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar">
+                                <div class="bar-value" style="height: 40%;"></div>
+                            </div>
+                            <div class="stats-day">Sat</div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar">
+                                <div class="bar-value" style="height: 20%;"></div>
+                            </div>
+                            <div class="stats-day">Sun</div>
+                        </div>
+                    </div> 
+                   
+                </div>
+            </div>
+            <div class="summary-stats-wrapper">
+                <div class="stats-outer-wrapper">
+                    <div class="stats-title">
+                        <div>Expense</div>
+                        <div class="stats-title__amount">
+                            <div>£243</div>
+                            <div class="muted">this week</div>    
+                        </div>
+                    </div>
+                    
+                    <div class="summary-stats expense-stats">
+                        <div class="bar-container">
+                            <div class="bar">
+                                <div class="bar-value" style="height: 20%;"></div>
+                            </div>
+                            <div class="stats-day">Mon</div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar">
+                                <div class="bar-value" style="height: 40%;"></div>
+                            </div>
+                            <div class="stats-day">Tue</div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar">
+                                <div class="bar-value" style="height: 30%;"></div>
+                            </div>
+                            <div class="stats-day">Wed</div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar">
+                                <div class="bar-value" style="height: 50%;"></div>
+                            </div>
+                            <div class="stats-day">Thu</div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar">
+                                <div class="bar-value" style="height: 30%;"></div>
+                            </div>
+                            <div class="stats-day">Fri</div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar">
+                                <div class="bar-value" style="height: 40%;"></div>
+                            </div>
+                            <div class="stats-day">Sat</div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar">
+                                <div class="bar-value" style="height: 20%;"></div>
+                            </div>
+                            <div class="stats-day">Sun</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="latest-expenses-wrapper">
+            <h2>Latest Income</h2>
+            <ul>
+
+                <li class="expenses-grid">
+                    <div class="expense-item">
+                        <div class="muted">Description</div>
+                        <div>Web Design</div>
+                    </div>
+
+                    <div class="expense-date">
+                        <div class="muted">Date</div>
+                        <div>23/10/2021</div>
+                    </div>
+                    <div class="expense-value">
+                        <div class="muted">Amount</div>
+                        <div>£12.99</div>
+                    </div>
+                    <div class="expense-actions">
+                        <div class="expense-buttons-wrapper">
+                            <div class="expense-button_wrapper__btn-holder">
+                                <i class="bi-pencil"></i>
+                            </div>
+                            <div class="expense-button_wrapper__btn-holder">
+                                <i class="bi-trash"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="expenses-grid">
+                    <div class="expense-item">
+                        <div class="muted">Description</div>
+                        <div>Fixing JS Bugs</div>
+                    </div>
+                    <div class="expense-date">
+                        <div class="muted">Date</div>
+                        <div>23/10/2021</div>
+                    </div>
+                    <div class="expense-value">
+                        <div class="muted">Amount</div>
+                        <div>£12.99</div>
+                    </div>
+                    <div class="expense-actions">
+                        <div class="expense-buttons-wrapper">
+                            <div class="expense-button_wrapper__btn-holder">
+                                <i class="bi-pencil"></i>
+                            </div>
+                            <div class="expense-button_wrapper__btn-holder">
+                                <i class="bi-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="expenses-grid">
+                    <div class="expense-item">
+                        <div class="muted">Description</div>
+                        <div>MERN Stack Tutorial</div>
+                    </div>
+                    <div class="expense-date">
+                        <div class="muted">Date</div>
+                        <div>23/10/2021</div>
+                    </div>
+                    <div class="expense-value">
+                        <div class="muted">Amount</div>
+                        <div>£1123.99</div>
+                    </div>
+                    <div class="expense-actions">
+                        <div class="expense-buttons-wrapper">
+                            <div class="expense-button_wrapper__btn-holder">
+                                <i class="bi-pencil"></i>
+                            </div>
+                            <div class="expense-button_wrapper__btn-holder">
+                                <i class="bi-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="latest-expenses-wrapper" style="margin-top: 35px;">
+            <h2>Latest Expenses</h2>
+            <ul>
+
+                <li class="expenses-grid">
+                    <div class="expense-item">
+                        <div class="muted">Description</div>
+                        <div>Adobe CC</div>
+                    </div>
+
+                    <div class="expense-date">
+                        <div class="muted">Date</div>
+                        <div>23/10/2021</div>
+                    </div>
+                    <div class="expense-value">
+                        <div class="muted">Amount</div>
+                        <div>£49.99</div>
+                    </div>
+                    <div class="expense-actions">
+                        <div class="expense-buttons-wrapper">
+                            <div class="expense-button_wrapper__btn-holder">
+                                <i class="bi-pencil"></i>
+                            </div>
+                            <div class="expense-button_wrapper__btn-holder">
+                                <i class="bi-trash"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="expenses-grid">
+                    <div class="expense-item">
+                        <div class="muted">Description</div>
+                        <div>Wireless Keyboard and Mouse</div>
+                    </div>
+                    <div class="expense-date">
+                        <div class="muted">Date</div>
+                        <div>23/10/2021</div>
+                    </div>
+                    <div class="expense-value">
+                        <div class="muted">Amount</div>
+                        <div>£12.99</div>
+                    </div>
+                    <div class="expense-actions">
+                        <div class="expense-buttons-wrapper">
+                            <div class="expense-button_wrapper__btn-holder">
+                                <i class="bi-pencil"></i>
+                            </div>
+                            <div class="expense-button_wrapper__btn-holder">
+                                <i class="bi-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="expenses-grid">
+                    <div class="expense-item">
+                        <div class="muted">Description</div>
+                        <div>Fixing JS Bugs</div>
+                    </div>
+                    <div class="expense-date">
+                        <div class="muted">Date</div>
+                        <div>23/10/2021</div>
+                    </div>
+                    <div class="expense-value">
+                        <div class="muted">Amount</div>
+                        <div>£12.99</div>
+                    </div>
+                    <div class="expense-actions">
+                        <div class="expense-buttons-wrapper">
+                            <div class="expense-button_wrapper__btn-holder">
+                                <i class="bi-pencil"></i>
+                            </div>
+                            <div class="expense-button_wrapper__btn-holder">
+                                <i class="bi-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+
+</body>
+
+</html>
