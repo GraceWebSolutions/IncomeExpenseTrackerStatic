@@ -133,10 +133,11 @@ body.left-nav .container {
 .expenses-grid:hover {
     transform: scaleX(1.02)
 }
-
+/*
 .expenses-grid:hover .expense-item {
-    /* color: #000; */
+     color: #000; 
 }
+*/
 
 /* Give the buttons some extra click area */
 .expense-actions .expense-button_wrapper__btn-holder {
